@@ -1,0 +1,32 @@
+<div class="loader">
+  <div></div><div></div><div></div><div></div><div></div>
+</div>
+
+<style>
+.loader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 40px;
+}
+.loader div {
+  background: #3498db;
+  width: 6px;
+  height: 100%;
+  margin: 0 3px;
+  animation: wave 1s infinite ease-in-out;
+}
+.loader div:nth-child(2) { animation-delay: 0.1s; }
+.loader div:nth-child(3) { animation-delay: 0.2s; }
+.loader div:nth-child(4) { animation-delay: 0.3s; }
+.loader div:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes wave {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+</style>
